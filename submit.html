@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        color: whitesmhoke;
+        }
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: rgb(255, 255, 255);
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            text-align: center;
+            height: 100vh;
+        }
+        form {
+            width: 80%;
+            border: 2px solid whitesmoke;
+            text-align: center;
+            margin: auto;
+            height: 90vh;
+            color: #28b3ee;
+            margin-top: 10%;
+            animation-name: nmy;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            border-radius: 5px;
+        }
+        @keyframes nmy {
+            0% {
+                border-left: 2px solid #6f84de;
+            }
+            25% {
+                border-top: 2px solid #6f84de;
+            }
+            50% {
+                border-right: 2px solid #6f84de;
+            }
+            75% {
+                border-bottom: 2px solid #6f84de;
+            }
+        }
+        div {
+            width: 100%;
+            height: 16%;
+            padding-top: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+        input {
+            width: 80%;
+            height: 5vh;
+            background: whitesmoke;
+            border: none;
+            border-radius: 5px;
+        }
+        header {
+            background: #28b3ee;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+        }
+        button {
+            background: #28b3ee;
+            width: 70%;
+            height: 6vh;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        input:focus {
+            outline: none;
+            animation-name: mn;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            color: #28b3ee;
+            font-weight: bolder;
+        }
+        @keyframes mn  {
+            from {
+                border: 2px solid #28b3ee;
+            }
+            to {
+                border: 2px solid whitesmoke;
+            }
+        }
+        #p {
+        padding-top:  5%;
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CREATE NEW ACCOUNT</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="https://formspree.io/f/xoqojrla" method="POST">
+                <div>
+                    <label>First Name:</label><br><br>
+                    <input type="text" required name="first-name" >
+                </div>
+                <div>
+                    <label>Second Name:</label><br><br>
+                    <input type="text" name="second-name" id="" required>
+                </div>
+                <div>
+                    <label>Email:</label><br><br>
+                    <input type="text" name="email" id="" required>
+                </div>
+                <div>
+                    <label>Create Password:</label><br><br>
+                    <input type="password" name="password" id="one" required>
+                </div>
+                <div>
+                    <label>Confirm Password:</label><br><br>
+                    <input type="password" name="password" id="correct" required>
+                </div>
+                <div>
+                    <button type="submit" onclick="myfunc()">CONTINUE</button>
+                      <p id="p"></p><br>
+                      <br>
+                        <br>
+                </div>
+        <br>
+            </form>
+            <br>
+        </div>
+        <script>
+            function myfunc() {
+                let one = document.getElementById('one').value;
+                let sec = document.getElementById("correct").value;
+                if (one == sec) {
+                    document.getElementById("p").style.display = "block";
+                    document.getElementById("p").innerHTML = "CORRECT PASSWORD";
+                }
+                else {
+                    alert("try retyping the password")
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>
