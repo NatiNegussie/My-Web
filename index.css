@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    color: whitge;
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: url("v1015-101a.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.top{
+    color: white;
+    font-family: 'Belanosima', sans-serif;
+}
+.medium {
+    color: white;
+}
+.bottom {
+    color: orangered;
+}
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+div {
+    border: 2px solvid black;
+    height: 33vh;
+}
+.bottom {
+    height: 50%;
+}
+.bottom {
+    margin-top: 30%;
+    background: floralwhite;
+    color: orangered;
+}
+.top {
+    display: flex;
+   vertical-align: middle;
+    
+    flex-wrap: wrap;
+}
+.top h1 {
+    width: 50%;
+    font-size: 100%;
+   padding: 0;
+}
+.top h1:first-line {
+ margin-left: 100%;
+}
+#h1 {
+    text-align: right;
+  
+}
+
+
+.medium h1 {
+    
+    font-size: 120%;
+    margin-left: 5%;
+}
+.medium {
+    width: 80%;
+    margin-left: 10%;
+}
+.medium p {
+    font-size: 90%;
+}
+button {
+    margin-left: 10%;
+    margin-top: 10px;
+    border: none;
+    background: orangered;
+    width: 150px;
+    height: 20%;
+    border-radius: 5px;
+    
+}
+.nav {
+    
+    margin-bottom: 100%;
+    
+}
+.nav ul {
+    padding: 0;
+    margin: auto;  
+}
+.nav li {
+    display: inline;
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+ 
+    height: 5vh;
+}
+.nav {
+    width: 100%;
+}
+.nav a {
+    display: block;
+    margin: auto;
+    w
+    
+}
+.nav{
+    background: rgba(255, 255, 255, .5);
+    background-clip: text;
+    padding: ;
+    border-radius: 5px;
+    height: 5vh;
+}
+i {
+    text-align: center;
+    margin: auto;
+    color: white;
+    
+}
+.top a:hover {
+    background: transparent;
+}
+.top a:hover i{
+    color: orangered;
+    
+}
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    marfgin-top: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.bottom div {
+    width: 33%;
+    height: 50%;
+    
+    
+}
+.bottom h2 {
+    
+    margin: 0;
+    text-align: center;
+    font-size: 100%;
+}
+.bottom li {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 5vh;
+    font-size: 75%;
+    color: orangered;
+   text-align: center;
+   justify-content: center;
+   margin-top: 5%;
+}
+.bottom ul {
+    padding: 0;
+    margin: 0;
+}
+.bottom a {
+    text-decoration: none;
+    display: block;
+    color: orangered;
+}
+.last {
+    display: flex;
+    width: 100%;
+    font-size: 100%;
+    flex-wrap: wrap;
+    bottom: 0;
+    margin: auto;
+    
+    
+}
+button {
+    color: white;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    animation-name: ;
+    animation-duration: 2s;
+}
+button:target {
+    
+    
+}
+@keyframes nmy {
+    from {
+        border-left: 50px solid orange;
+    }
+    
+}
+.lasgt a {
+    margin-top: 100%;
+}
+main {
+    flex: 1 auto;
+}
+footer {
+    margin-top: 50%;
+}
+.top h1 {
+ 
+}
+.top li {
+    padding-top: 5px;
+}
+.bottom a:hover {
+    color: olive;
+}
+#in-page-channel-node-id {
+    display: none;
+}

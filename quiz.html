@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Nunito+Sans:opsz@6..12&family=Open+Sans:ital,wght@0,300;1,700&family=Ysabeau+Infant:wght@1&family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+    <script src="quiz.js"></script>
+</head>
+<body>
+    <header><div class="top">
+            <div class="title"><h3>Ethio Kids</h3></div>
+            <div class="logos">
+                <div><a href="">
+                    <i class="fa-solid fa-gamepad"></i><p>ጌም</p>
+                </a></div>
+                <div><a href="">
+                    <i class="fa-solid fa-question"></i><p>ጥያቄ</p>
+                </a></div>
+                <div><a href=""><i class="fa-solid fa-book"></i><p>ተረት</p></a></div>
+            </div>
+        </div>
+        </header>
+  
+        <main>
+             <h1>ጥያቄዎች</h1>   
+           <div>
+               
+               <label>የአለማችን ትልቁ ሀገር ማን ናት?</label><br>
+               <label><input type="radio" value="america" id="btns" name="one" required>ሩሲያ</label><br>
+           <label><input type="radio" value="ካናዳ" id="btn" name="one" required>ካናዳ</label><br>
+           <label><input type="radio" value="አልጄሪያ" id="bt" name="one" required>አልጄሪያ</label><br>
+           <label><input type="radio" value="አርጀንቲና" id="btd" name="one" required>አርጀንቲና</label><br>
+           <p id="demo"></p>
+           <center><button onclick="myfuncs()">Submit</button></center>
+           </div>
+           <div><label>የአለማችን ትንሿ ሀገር ማን ናት?</label><br>
+           <label><input type="radio" value="vatican" id="button1" name="btn">ቫቲካን</label><br>
+           <label><input type="radio" value="ካናዳ" id="button2" name="btn">ካናዳ</label><br>
+           <label><input type="radio" value="ሞርኮ" id="button3" name="btn">ሞሮኮ</label><br>
+          <label> <input type="radio" value="ህንድ" id="button4" name="btn">ህንድ</label>
+          <p id="null"></p>
+          <center><button onclick="mybtn()">Submit</button></center>
+          </div>
+           <div><label>ስልክን የፈለሰፈዉ ማን ነው?</label><br>
+           
+           <label><input type="radio" value="አብርሃም ሊንከን" id="click1" name="click">አብርሃም ሊንከን</label><br>
+           <label>
+           <input type="radio" value="አሌክሳንደር ግራህምቤል" id="click" name="click">አሌክሳንደር ግራህምቤል</label><br>
+           <label><input type="radio" value="ቶማስ ኤዲሰን" id="click2" name="click">ቶማስ ኤዲሰን</label><br>
+           <label><input type="radio" value="ኒዉተን" id="click3" name="click">ኒዉተን</label>
+           <p id="write"></p>
+           <center><button onclick="myclick()">Submit</button></center></div>
+           <div><label>የአለማችን ትልቁ ከተማ ማን ናት?</label><br>
+           <label><input type="radio" value="ደልሂ" id="ding1" name="ding">ደልሂ</label><br>
+          <label> <input type="radio" value="ሻንጋይ" id="ding2" name="ding">ሻንጋይ</label><br>
+          <label><input type="radio" value="ቶክዮ" id="ding3" name="ding">ቶክዮ</label><br>
+           <label><input type="radio" value="ካይሮ" id="ding4" name="ding">ካይሮ</label>
+           <p id="dong"></p>
+           <center><button onclick="myding()">Submit</button></center></div>
+           <div><label id="num">አለማችንን የዞረዉ የመጀመሪያዉ ሰዉ ማን ይባላል?</label><br>
+           <label><input type="radio" value="ማርኮ ፖሎ" id="last1" name="nmy">ማርኮ ፖሎ</label><br>
+  <label>         <input type="radio" value="ክርስቶፈር ኮሎምቦስ" id="last2" name="nmy">ክርስቶፈር ኮሎምቦስ</label><br>
+           <label><input type="radio" value="ጄምስ ኩክ" id="last3" name="nmy">ጄምስ ኩክ</label><br>
+           <label><input type="radio" value="" id="last4" name="nmy">ማጄላን</label><p id="explore" ></p>
+           <center><button onclick="mylast()">Submit</button></center>
+           </div>
+        </main>
+        <footer>
+         <div class="bottom">
+         <div class="serv"><h2>Services</h2>
+         <ul>
+             <li><a href="">Web design</a></li>
+             <li><a href="">Thumbnail</a></li>
+             <li><a href="">Logo</a></li>
+             <li><a href="">Software</a></li>
+         </ul></div>
+         <div class="tool"><h2>Tools</h2><ul>
+             <li><a href="">Quiz</a></li>
+             <li><a href="">News</a></li>
+             <li><a href="">Technology</a></li>
+             <li><a href="">Games</a></li>
+         </ul>
+         </div>
+         <div class="supp"><h2>Support</h2>
+         <ul>
+             <li><a href="">Contact</a></li>
+             <li><a href="">Email</a></li>
+             <li><a href="">Telegram</a></li>
+             <li><a href="">Phone Number</a></li>
+         </ul></div>
+         <div class="last">
+             <li>Ethiopia, Oromia</li>
+             <li><a href="">@Ethio Kids 2023</a></li>
+             <li><a href="">Contact Us</a></li>
+             </div>
+     </div>
+      </div>
+     </footer>
+</body>
+</html>

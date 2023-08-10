@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    bacfkground: url('v1015-101a.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+}
+divt {
+    border: 2px solid black;
+}
+.top {
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+    
+    color: lightskyblue;
+    display: flex;
+}
+.logos {
+    width: 80%;
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.logos div {
+    width: 100%;
+   
+    margin: auto;
+    padding: 0;
+    
+}
+i {
+  color: lightskyblue;  
+}
+header {
+    height: 15vh;
+}
+.logos a{
+    color: lightskyblue;
+    
+}
+.logos a:hover {
+ 
+    
+}
+.logos a:hover i, .logos a:hover p{
+    color: white;
+    
+    
+}
+.logos a:hover i {
+    color: orangered;
+}
+.logos div{
+    border-radius: 50%;
+}
+.logos a:hover p {
+    background: lightskyblue;
+    border-radius: 5px;
+       animation-name: animation;
+    animation-duration: .3s;
+}
+@keyframes animation {
+    from {
+        width: 80%;
+    }
+    to {
+        width: 100%;
+    }
+    }
+    main h1{
+        animation-name: nmy;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        display: block;
+    }
+    @keyfgrames nmy {
+        from {
+          font-size: 50%;
+        }
+        to {
+            display: none;
+            visibility: hidden;
+            font-size: 100%;
+        }
+    }
+    .main h1 {
+        
+        text-align: center;
+        margin-top: 10%;
+        
+    }
+    .magin {
+        height: 100vh;
+    }
+    @mtedia screen and (width: 320px){
+        body {
+            
+            background: lightskyblue;
+            color: red;
+        }
+    }
+.input {
+    height: 25vh;
+}
+.ballon {
+    display: flex;
+ justify-content: space-between;
+   
+   
+}
+.ballon img {
+    width: 5em;
+   
+}
+.ballon div {
+   
+    
+}
+.toys {
+    display: flex;
+    justify-content: space-between;
+}
+.toys img {
+    width: 5em;
+}
+.lasttoy {
+    display: flex;
+    justify-content: space-between;
+}
+.lasttoy img {
+    width: 5em;
+}
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    marfgin-top: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.bottom div {
+    width: 33%;
+    height: 50%;
+    
+    
+}
+.bottom h2 {
+    
+    margin: 0;
+    text-align: center;
+    font-size: 100%;
+}
+.bottom li {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 5vh;
+    font-size: 75%;
+    color: lightskyblue;
+   text-align: center;
+   justify-content: center;
+   margin-top: 5%;
+}
+.bottom ul {
+    padding: 0;
+    margin: 0;
+}
+.bottom a {
+    text-decoration: none;
+    display: block;
+    color: lightskyblue;
+}
+.last {
+    display: flex;
+    width: 100%;
+    font-size: 100%;
+    flex-wrap: wrap;
+    bottom: 0;
+    margin: auto;
+    
+    
+}
+button {
+    color: white;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    animation-name: ;
+    animation-duration: 2s;
+}
+button:target {
+    
+    
+}
+@keyframes nmvy {
+    from {
+        border-left: 50px solid orange;
+    }
+    
+}
+.lasgt a {
+    margin-top: 100%;
+}
+main {
+    flex: 1 auto;
+}
+footer {
+    margin-top: 50%;
+}
+.top h1 {
+ 
+}
+.top li {
+    padding-top: 5px;
+}
+.bottom a:hover {
+    color: olive;
+}
+ 
+ footer {
+     background: white;
+     color: lightskyblue;
+ }
+ .input {
+     margin: auto;
+     text-align: center;
+ }
+ input {
+     height: 50px;
+     border-radius: 5px;
+ }
+ button {
+     margin-top: 15px;
+     border: none;
+     text-align: center;
+     width: 150px;
+     height: 5vh;
+     background: lightskyblue;
+     border-radius: 5px;
+ }
+ img {
+     width: 50%;
+ }
+@media screen and (width: 768px){
+    .ballon img, .toys img, .lasttoy img {
+        width: 30px;
+        background: red;
+    }
+    
+}
+.tytle h1{
+    font-size: medium;
+}
+.main div {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    
+    
+}
+main div div {
+    width: 100%;
+    
+}
+main {
+    margin-top: 3cm;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+.main {
+    width: 90%;
+    background: white;
+    border-radius: 5%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+input {
+    outline: none;
+    border: 2px solid lightskyblue;
+    background: white;
+    color: lightskyblue;
+}
+input::placeholder {
+    color: lightskyblue;
+}
+input:v
+footer {
+    
+}
+@keyframes blue {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+        width: 200px;
+    }
+}
+eimg {
+    animation-name: bl
+    animation-duration: 2s;
+}

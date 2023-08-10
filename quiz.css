@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: url('v1015-101a.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top {
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+    
+    color: lightskyblue;
+    display: flex;
+}
+.logos {
+    width: 80%;
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.logos div {
+    width: 100%;
+   
+    margin: auto;
+    padding: 0;
+    
+}
+i {
+    
+}
+header {
+    height: 15vh;
+}
+.logos a{
+    color: lightskyblue;
+    
+}
+.logos a:hover {
+ 
+    
+}
+.logos a:hover i, .logos a:hover p{
+    color: white;
+    
+    
+}
+.logos a:hover i {
+    color: orangered;
+}
+.logos div{
+    border-radius: 50%;
+}
+.logos a:hover p {
+    background: lightskyblue;
+    border-radius: 5px;
+       animation-name: animation;
+    animation-duration: .3s;
+}
+@keyframes animation {
+    from {
+        width: 80%;
+    }
+    to {
+        width: 100%;
+    }
+}
+digv {
+    border: 2px solid black;
+    
+}
+main {
+  
+    margin-top: 60px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+main div {
+  
+}
+label {
+    display: inline-flex;
+}
+h1{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+input {
+    display: flex;
+   
+}
+#demo {
+    animation-name: mny;
+    animation-duration: 1s;
+    
+}
+@keyframes mny {
+    from {
+        opacity: .5;
+        color: blue;
+    }
+    to {
+        opacity: 1;
+        color: red;
+    }
+}
+input{
+    accent-color: lightskyblue;
+    accent-border: 2px solid blue;
+   
+    accent-outline: none;
+    
+   
+  
+  background: #e8e8e8;
+  
+
+  /* The outline will be the outer circle */
+  ;
+}
+buttotn {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    clear: both;
+    
+}
+main div {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    color: white;
+    borfder: 2px solid white;
+    background: linear-gradient(90deg, lightskyblue, lightblue);
+    font-weight: bold;
+}
+    background: red;
+}
+inpxut[type="radio"] {
+    display: none;
+}
+main div label {
+    margin-left: 50px;
+}
+h1 {
+    text-align: center;
+    color: lightskyblue;
+}
+button {
+    background: white;
+    border: 2px solid white;
+    width: 70px;
+    border-radius: 5px;
+    color: lightskyblue;
+}
+.top {
+    border-radius: 5px;
+}
+#num {
+    margin: 0;
+}
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+         background: #173459;
+         color: white;
+      }
+      /* style the custom check boxes and radios when their corresponding inputs are checked */
+      inpfut[type="radio"]::checked{
+         background: orange;
+         border: none;
+      }
+main p {
+    text-align: center;
+    /*background: greenyellow;:*/
+    
+}
+h1 {
+    color: white;
+}
+.top a {
+    text-decoration: none;
+}
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    marfgin-top: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.bottom div {
+    width: 33%;
+    height: 50%;
+    
+    
+}
+.bottom h2 {
+    
+    margin: 0;
+    text-align: center;
+    font-size: 100%;
+    color: lightskyblue;
+    font-weight: bold;
+}
+.bottom li {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 5vh;
+    font-size: 75%;
+    color: lightskyblue;
+   text-align: center;
+   justify-content: center;
+   margin-top: 5%;
+}
+.bottom ul {
+    padding: 0;
+    margin: 0;
+}
+.bottom a {
+    text-decoration: none;
+    display: block;
+    color: lightskyblue;
+}
+.last {
+    display: flex;
+    width: 100%;
+    font-size: 100%;
+    flex-wrap: wrap;
+    bottom: 0;
+    margin: auto;
+    
+    
+}
+
+
+button:target {
+    
+    
+}
+@keyframes nmy {
+    from {
+        border-left: 50px solid orange;
+    }
+    
+}
+.lasgt a {
+    margin-top: 100%;
+}
+main {
+    flex: 1 auto;
+}
+footer {
+    margin-top: 50%;
+}
+.top h1 {
+ 
+}
+.top li {
+    padding-top: 5px;
+}
+.bottom a:hover {
+    color: olive;
+}
+footer {
+    background: white;
+}
+.bottom {
+    padding-top: 10%;
+}
+label {
+    padding-top: 5%;
+}
+.bottom div li a::selection{
+    background: wheat;
+    color: black;
+}
