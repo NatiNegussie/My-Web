@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+   
+    borrtder: 2px solid black;
+}
+body {
+    width: 100%;
+    background: whitesmoke;
+    height: auto;
+     padding: 0;
+    margin: 0;
+}
+difv {
+    border: 2px solid black;
+}
+.top {
+    display: flex;
+}
+.header {
+    width: 20%;
+   
+}
+.header h1 {
+    font-size: 100%;
+}
+.links {
+    
+    width: 80%;
+    border: 2px solid red;
+ background: white;
+ display: flex; 
+}
+li {
+  float: left;
+    width: 25%;
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+   display: flex;
+   padding: auto;
+   
+   justify-content: center;
+}
+li a {
+   display: block;
+   text-align: center;
+}
+xul {
+    padding: 0;
+    margin: 0;
+}
+.header img {
+    width: 70%;
+}
+.main {
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.main button {
+    margin: auto;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    box-rshadow: 5px 10px 10px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    background: transparent;
+    border: 2px solid black;
+    text-transform: uppercase;
+    border-radius: 10px;
+    
+}
+@media screen and (max-width: 320px){
+  .services {
+      font-size: 75%;
+  }
+  .top li{
+      font-size: 75%;
+  }
+}
+@media screen and (min-width: 768px){
+    .service {
+        text-align: left;
+    }
+}
+.service {
+    font-weight: lighter;
+    text-align: left;
+    padding: 15px;
+}
+.services {
+    width: 100%;
+}
+.apply {
+    padding-top: 50px;
+}
+li a{
+    background: transparent;
+    
+    width: 100%;
+    font-family: Sans-Serif;
+    
+}
+.header {
+    fborder: 2px solid hotpink;
+}
+.links {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50%;
+    align-items: center;
+    margin: auto;
+    background: transparent;
+}
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    marfgin-top: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.bottom div {
+    width: 33%;
+    height: 50%;
+    
+    
+}
+.bottom h2 {
+    
+    margin: 0;
+    text-align: center;
+    font-size: 100%;
+}
+.bottom li {
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 5vh;
+    font-size: 75%;
+    color: orangered;
+   text-align: center;
+   justify-content: center;
+   margin-top: 5%;
+}
+.bottom ul {
+    padding: 0;
+    margin: 0;
+}
+.bottom a {
+    text-decoration: none;
+    display: block;
+    color: orangered;
+}
+.last {
+    display: flex;
+    width: 100%;
+    font-size: 100%;
+    flex-wrap: wrap;
+    bottom: 0;
+    margin: auto;
+    
+    
+}
+buftton {
+    color: white;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    animation-name: ;
+    animation-duration: 2s;
+}
+button:target {
+    
+    
+}
+@keyframes nmy {
+    from {
+        border-left: 50px solid orange;
+    }
+    
+}
+.lasgt a {
+    margin-top: 100%;
+}
+main {
+    flex: 1 auto;
+}
+footer {
+    margin-top: 50%;
+}
+.top a {
+    text-decoration: none;
+    color: black;
+}
