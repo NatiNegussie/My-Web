@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
    
-    borrtder: 2px solid black;
+    bordter: 2px solid black;
 }
 body {
     width: 100%;
@@ -26,8 +26,7 @@ difv {
 .links {
     
     width: 80%;
-    border: 2px solid red;
- background: white;
+  
  display: flex; 
 }
 li {
@@ -52,11 +51,17 @@ xul {
 }
 .header img {
     width: 70%;
+    justify-content: center;
+   
+}
+.header {
+    text-align: center;
+    justify-content: center;
 }
 .main {
     width: 100%;
     text-align: center;
-    
+    font-family: Sans-serif;
     
 }
 .main button {
@@ -88,6 +93,11 @@ xul {
     font-weight: lighter;
     text-align: left;
     padding: 15px;
+    width: 100%;
+}
+.service {
+    width: 100%;
+    font-size: 150%;
 }
 .services {
     width: 100%;
@@ -106,8 +116,8 @@ li a{
     fborder: 2px solid hotpink;
 }
 .links {
-    border: 2px solid black;
-    border-radius: 10px;
+    
+    border-radius: 5px;
     height: 50%;
     align-items: center;
     margin: auto;
@@ -193,6 +203,15 @@ footer {
     text-decoration: none;
     color: black;
 }
-.serv {
-    font-size: 95%;
+img {
+    border: 2px solid black;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 3px;
+    background: lightblue;
+}
+.links {
+    margin-right: 3px;
 }
