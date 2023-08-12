@@ -286,3 +286,6 @@ label {
     background: wheat;
     color: black;
 }
+a {
+    text-decoration: none;
+}

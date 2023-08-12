@@ -5,7 +5,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    bacfkground: url('v1015-101a.jpg');
+    background: url('v1015-101a.jpg');
     background-attachment: fixed;
     background-size: cover;
     justify-content: center;
@@ -308,4 +308,7 @@ footer {
 eimg {
     animation-name: bl
     animation-duration: 2s;
+}
+a {
+    text-decoration: none;
 }

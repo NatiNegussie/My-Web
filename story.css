@@ -1,0 +1,135 @@
+*{
+    
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: url('v1015-101a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.top {
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+    
+    color: lightskyblue;
+    display: flex;
+}
+.logos {
+    width: 80%;
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+.logos div {
+    width: 100%;
+   
+    margin: auto;
+    padding: 0;
+    
+}
+i {
+  color: lightskyblue;  
+}
+header {
+    height: 15vh;
+}
+.logos a{
+    color: lightskyblue;
+    
+}
+.logos a:hover {
+ 
+    
+}
+.logos a:hover i, .logos a:hover p{
+    color: white;
+    
+    
+}
+.logos a:hover i {
+    color: orangered;
+}
+.logos div{
+    border-radius: 50%;
+}
+.logos a:hover p {
+    background: lightskyblue;
+    border-radius: 5px;
+       animation-name: animation;
+    animation-duration: .3s;
+}
+@keyframes animation {
+    from {
+        width: 80%;
+    }
+    to {
+        width: 100%;
+    }
+    }
+    divf {
+        border: 2px solid black;
+    }
+    .items {
+        heigfht: 100vh;
+        bordger: 2px solid red;
+        margin-top: 3cm;
+        display: flex;
+        flex-direction: column;
+    }
+    .one img {
+        width: 100%;
+        object-fit: fill;
+        border-radius: 5px;
+    }
+    .one {
+        width: 95%;
+        display: flex;
+        margin: auto;
+        border-radius: 5px;
+    }
+   main {
+       display: flex;
+       width: 100%;
+       heigght: 100vh;
+   }
+   .two {
+       texft-align: center;
+       display: flex;
+       width: 100%;
+       flex-direction: column;
+   }
+.two h2 {
+    font-size: 150%;
+    justify-content: center;
+    width: 100%;
+}
+.title {
+    width: 100%;
+}
+p {
+    width: 100%;
+    fo
+}
+.story {
+    width: 80%;
+    margin: auto;
+}
+.items {
+    background: white;
+    padding-top: 10%;
+    color: rgb(10, 102, 194);
+    border-radius: 5px;
+}
+#message {
+    border: 2px solid lightskyblue;
+}
+a {
+    text-decoration: none;
+}
