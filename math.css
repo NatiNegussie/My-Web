@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    bordger: 2px solid black;
+    boryder: 2px solid black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
@@ -8,19 +8,21 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: body;
+    animation-duration: 2s;
+    
 }
-/*@keyframes body {
+@keyframes body {
     from {
-        margin-top: 50%;
+       opacity: .5;
     }
     to {
-        margin-top: auto;
+        opacity: 1;
     }
-}*/
+}
 .family {
     animation-name: body;
     animation-duration: 2s;
@@ -212,7 +214,7 @@ em {
        justify-content: center;
     }
 
-   .
+   
 .questions {
     height: 100vh;
     width: 90%;
@@ -321,7 +323,7 @@ a {
     
 }
 .bottom h2 {
-    
+    color: lightskyblue;
     margin: 0;
     text-align: center;
     font-size: 100%;
@@ -332,7 +334,7 @@ a {
     width: 100%;
     height: 5vh;
     font-size: 75%;
-    color: orangered;
+    color: white;
    text-align: center;
    justify-content: center;
    margin-top: 5%;
@@ -344,7 +346,7 @@ a {
 .bottom a {
     text-decoration: none;
     display: block;
-    color: orangered;
+    color: lightskyblue;
 }
 .last {
     display: flex;
@@ -361,4 +363,174 @@ footer {
 }
 a {
     display: block;
+}
+.guess {
+    width: 90%;
+    background: transparent;
+    
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   margin: auto;
+   margin-top: 50px;
+   height:vh;
+       justify-content: space-between;
+       
+ l
+}
+.guess img {
+    max-width: 200px;
+    
+    margin: auto;
+    display: flex;
+    height: auto;
+
+}
+.guess .img {
+    height: auto;
+    background: white;
+}
+.guess .name{
+   
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.img {
+    display: flex;
+}
+.guess h1 {
+    font-size: 90%;
+    color: steelblue;
+}
+.guess p {
+    width: 100%;
+    color: white;
+    font-size: large;
+}
+.name {
+    background: lightskyblue;
+}
+.other {
+    padding-top: 15px;
+    text-align: center;
+}
+.other button {
+    width: 150px;
+    background: lightskyblue;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+}
+.guess {
+  border: 2px solid lightskyblue;
+    border-radius: 5px;
+    
+}
+@keyframes guess {
+    from {
+        
+        width: 50%;
+    }
+    to {
+       margin: auto;
+    }
+}
+.guess img {
+    animation-name: guess;
+    animation-duration: 2s;
+    transition-property: height;
+    transition-duration: 2s;
+}
+footer {
+    color: ;
+}
+.one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.one p {
+    font-size: 25px;
+   width: 30%;
+   text-align: center;
+   background: lightgreen;
+   border-radius: 5px;
+   color: floralwhite;
+}
+.one input {
+    width: 20%;
+    height: 50px;
+    outline: none;
+    text-align: center;
+    background: ;
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+    background-color: lightskyblue;
+}
+input:focus {
+    background: lightskyblue;
+    color: white;
+    
+}
+.math {
+    width: 100%;
+    padding-bottom: 10%;
+}
+@media screen and (min-width: 700px){
+    .math {
+        width: 50%;
+        margin: auto;
+    }
+}
+.one button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background: lightskyblue;
+    color: white;
+    border-radius: 5px;
+}
+.last {
+    margin-top: 15px;
+}
+.correct {
+    display: ;
+    flex-direction: column;
+    margin-top: 10%;
+    text-align: left;
+    font-size: 15px;
+    animation-name: correct;
+    animation-duration: .5s;
+    
+    display: none;
+    
+}
+@keyframes correct {
+    from {
+        margin-left: 50%;
+        opacity: 0;
+        margin-top: 1px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#p {
+    text-align: left;
+    font-weight: light;
+    background: lightgreen;
+    color: white;
+    border-radius: 5px;
+}
+.correct {
+    background: lightgreen;
+    color: white;
+    border-radius: 5px;
 }

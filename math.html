@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="math.css">
+    <script src="math.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="head"><h1>Games</h1></div>
+            <div class="links">
+                <ul>
+                    <li><a href="quiz.html" target="_blank">Quiz</a></li>
+                    <li><a href="menu.html" target="_blank" >Menu</a></li>
+                    <li><a href="index.html" target="_blank">Main</a></li>
+                    <li><a href="Service.html" target="_blank">Services</a></li>
+                </ul>
+            </div>
+            </div>
+            
+            
+            <div class="math">
+                <div class="one">
+                    <p>2+2 = </p>
+                    <input type="number" name="" id="one" required>
+                </div>
+               
+                <div class="one">
+                    
+                    <p>3 × 2 = </p>
+                    <input type="number" name="" id="two" required>
+                </div>
+                <div class="one">
+                    <p>5+9 = </p>
+                    <input type="number" name="" id="three" required>
+                </div>
+                <div class="one">
+                    <p>10+9 = </p>
+                    <input type="number" name="" id="four" required>
+                </div>
+                <div class="one">
+                    <p>4+9 = </p>
+                    <input type="number" name="" id="five" required>
+                </div>
+                <div class="one last">
+                    <button type="submit" onclick="confirms()" id="confirm">ያረጋግጡ</button>
+                    
+                    
+                    <button onclick="solution()" style="display: none;" id="sol">አሰራሩን ይዩ</button>
+                    <div class="correct" id="correct">
+        <h2 id="p">2 × 2 = 2 + 2</h2>
+         <h2 id="p">3 × 2 = 3 + 3</h2> 
+        <h2 id="p">5 + 9 = 3 + 3 + 3 + 5</h2> 
+    <h2 id="p">10 + 9 = 3 + 3 + 3 + 5 + 5</h2>
+    <h2 id="p">4 + 9 = 3 + 3 + 3 + 2 + 2</h2>           
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

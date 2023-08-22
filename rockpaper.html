@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        borgder: 2px solid whitesmoke;
+        
+        }
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .top {
+            display: flex;
+            width: 100%;
+            height: 10vh;
+            border-bottom: 2px solid rgb(19, 20, 23);
+            box-shadow: 0 0 10px rgb(19, 20, 23);
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            font-size: 100%;
+            color: white;
+        }
+        .photo {
+            display: flex;
+            justify-content: space-between;
+        }
+        .photo img {
+        width: 100px;
+        }
+        p {
+        color: whitesmoke;
+        }
+        .pcvs {
+            display: flex;
+            justify-content: space-around;
+        }
+        .srpbtn {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin-left: 5px;
+            
+           margin-top: 2cm;
+        }
+        button {
+            
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            background: transparent;
+        }
+        #you {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .score {
+            
+            width: 100;
+            margin-left: 30px;
+        }
+        label {
+           margin-left: 5px; 
+           color: whitesmoke;
+        }
+        #score {
+            margin-left: 15px;
+        }
+        #2 {
+            text-align: left;
+           
+        }
+        #3 {
+            text-align: left;
+           
+        }
+        #two {
+            animation-name: two;
+            animation-duration: 2s;
+            
+        }
+        @keyframes two {
+            from{
+                opacity: .5;
+                display: none;
+            }
+            to {
+                opacity: 1;
+                display: block;
+            }
+        }
+        button img {
+            width: 50px;
+            background: transparent;
+        }
+        .alert  {
+            text-align: center;
+            margin: auto;
+            color: lightskyblue;
+        }
+        .alert h1 {
+            text-align: center;
+        }
+        .container {
+            width: 100;
+            color: llightskyblue;
+        }
+        .main {
+            width: 100;
+            display: flex;
+            flex-direction: column;
+        }
+        #2 {
+        margin-left: 15px;
+        left: 10px;
+        }
+        .top {
+            background: lightskyblue;
+            color: ;
+        }
+        .main {
+            color: lightskyblue;
+        }
+        p, label {
+            color: lightskyblue;
+        }
+        .alert h1 {
+            color: lightskyblue;
+        }
+        #one, #two {
+            width: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>ድንጋይ መቀስ ወረቀት</h1>
+        </div>
+        <div class="main">
+            <div class="pcvs">
+                <p>User</p>
+                <p>Pc</p>
+            </div>
+            <div class="photo">
+                <p id="#2">ይምረጡ</p>
+                <img src="" alt="" id="one">
+                <p id="#3"></p>
+                <img src="" alt="" id="two">
+            </div>
+            <div class="srpbtn">
+                <button onclick="rock()"><img src="20230816_170550.png" alt=""></button>
+                <button onclick="scissor()"><img src="20230816_170421.png" alt=""></button>
+                <button onclick="paper()"><img src="20230816_170512.png" alt=""></button>
+            </div>
+            <div>
+                <p id="you">ዉጤት</p>
+            </div>
+            <div class="score">
+                <label>የ እናንተ ዉጤት: <p id="4"></p></label><p id="score"></p>
+            </div>
+            <div class="alert">
+                <h1>ይህ Beta ድንጋይ መቀስ ጨዋታ ነው።</h1>
+                <h1>አልሰራ ካላችሁ በተኖቹን ደብል ክሊክ አድርጉ</h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+let score = 0;
+    
+    function rock() {
+    
+     document.getElementById("#2").style.display = "none";
+     document.getElementById("one").src = "toppng.com-rock-paper-scissors-circle-1114x1114.png";
+       let randomNumber = Math.random();
+       console.log(randomNumber);
+       if (randomNumber >= 0 && randomNumber < 1 / 3) {
+           document.getElementById("two").src = "toppng.com-rock-paper-scissors-circle-1114x1114.png";
+           document.getElementById("score").innerHTML = "አቻ";
+           score++;
+           document.getElementById("4").innerHTML = score;
+       }
+       if (randomNumber >= 1 / 3 && randomNumber > 2 / 3) {
+           document.getElementById("two").src = "Daco_5351099.png";
+           document.getElementById("score").innerHTML = "ተሸንፈዋል";
+           
+           
+           
+       }
+       if(randomNumber >= 2 / 3 && randomNumber > 3 / 3) {
+           document.getElementById("two").src = "20230816_175735.png";
+           document.getElementById("score").innerHTML = "አሸንፈዋል";
+           score++;
+           document.getElementById("4").innerHTML = score;
+       }
+    }
+    /*second line*/
+    function scissor() {
+    document.getElementById("one").src = "20230816_175735.png";
+     document.getElementById("#2").style.display = "none";
+       let randomNumber = Math.random();
+       console.log(randomNumber);
+       if (randomNumber >= 0 && randomNumber < 1 / 3) {
+           document.getElementById("two").src = "toppng.com-rock-paper-scissors-circle-1114x1114.png";
+           document.getElementById("score").innerHTML = "ተሸንፈዋል";
+           score;
+           document.getElementById("4").innerHTML = score;
+       }
+       if (randomNumber >= 1 / 3 && randomNumber > 2 / 3) {
+           document.getElementById("two").src = "Daco_5351099.png";
+           document.getElementById("score").innerHTML = "አሸንፈዋል";
+           
+         score++; 
+          document.getElementById("4").innerHTML = score;
+           
+       }
+       if(randomNumber >= 2 / 3 && randomNumber > 3 / 3) {
+           document.getElementById("two").src = "20230816_175735.png";
+           document.getElementById("score").innerHTML = "አቻ";
+           score++;
+           document.getElementById("4").innerHTML = score;
+       }
+    }
+    /*Paper*/
+    function paper() {
+    document.getElementById("one").src = "Daco_5351099.png";
+     document.getElementById("#2").style.display = "none";
+       let randomNumber = Math.random();
+       console.log(randomNumber);
+       if (randomNumber >= 0 && randomNumber < 1 / 3) {
+           document.getElementById("two").src = "toppng.com-rock-paper-scissors-circle-1114x1114.png";
+           document.getElementById("score").innerHTML = "አሸንፈዋል";
+           score++;
+           document.getElementById("4").innerHTML = score;
+       }
+       if (randomNumber >= 1 / 3 && randomNumber > 2 / 3) {
+           document.getElementById("two").src = "Daco_5351099.png";
+           document.getElementById("score").innerHTML = "አቻ";
+           
+         score++; 
+          document.getElementById("4").innerHTML = score;
+           
+       }
+       if(randomNumber >= 2 / 3 && randomNumber > 1) {
+           document.getElementById("two").src = "20230816_175735.png";
+           document.getElementById("score").innerHTML = "ተሸንፈዋል";
+           score;
+           document.getElementById("4").innerHTML = score;
+       }
+    }
+</script>
+</script>
+</html>
