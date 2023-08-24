@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethio Calander</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        bord
+        er: 2px solid;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    body {
+        background: linear-gradient(180deg, lightgreen, lightorange);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .top {
+        margin-top: 2cm;
+        font-size: x-large;
+    }
+    
+    .container {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        height: 50vh;
+
+    }
+  
+    .container {
+        margin-top: 20%;
+        background-color: white;
+        color: white;
+        border-color: orange;
+        border: 2px solid orange;
+        border-radius: 5px;
+    }
+      @media screen and (max-width: 400px){
+        .container {
+            width: 70%;
+            height: 70vh;
+        }
+        .container div {
+        height: 30%
+        }
+        
+    }
+    .medium {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .medium div {
+        width: 33%;
+        background-color: orange;
+    }
+    .time {
+        margin-top: 15px;
+    }
+    .top {
+        color: orange;
+        border: none;
+    }
+    .time {
+        color: orange;
+        border: none;
+    }
+</style>
+<script src="tutroil.js"></script>
+<body>
+  <div class="container">
+    <div class="top" id="top"></div>
+    <div class="medium">
+        <div class="day" id="day"></div>
+        <div class="hour" id="hour"></div>
+        <div class="fullyear" id="fullyear"></div>
+    </div>
+  <div class="time" id="time"></div>
+  </div>
+</body>
+<script>
+    let time = new Date();
+    let weekDay = time.getDay();
+    let day = time.getDate();
+    let month = time.getMonth() + 5;
+    let fullyear = time.getFullYear() - 8;
+    let times = time.getMinutes();
+   let hour = time.getHours() - 6;
+   if (times < 10) {
+    document.getElementById('time').innerHTML = hour + ' :0 ' + times; 
+   }
+    else {
+        document.getElementById('time').innerHTML = hour + ' :' + times; 
+   }
+   if (weekDay == '1') {
+    document.getElementById('top').innerHTML = 'ሰኞ';
+
+   }
+    
+if (weekDay == '2') {
+    document.getElementById('top').innerHTML = 'ማክሰኞ';
+}
+if (weekDay == '3') {
+    document.getElementById('top').innerHTML = 'ረቡዕ';
+}
+if (weekDay == '4') {
+    document.getElementById('top').innerHTML = 'ሀሙስ';
+}
+if (weekDay == '5') {
+    document.getElementById('top').innerHTML = 'አርብ';
+}
+if (weekDay == '6') {
+    document.getElementById('top').innerHTML = 'ቅዳሜ';
+}
+if (weekDay == '7') {
+    document.getElementById('top').innerHTML = 'እሁድ';
+}
+document.getElementById('day').innerHTML = day - 6;
+if (month == '1') {
+    document.getElementById('hour').innerHTML = 'መስከረም';
+}
+if (month == '2') {
+    document.getElementById('hour').innerHTML = 'ጥቅምት';
+}
+if (month == '3') {
+    document.getElementById('hour').innerHTML = 'ህዳር';
+}
+if (month == '4') {
+    document.getElementById('hour').innerHTML = 'ታህሳስ';
+}
+if (month == '5') {
+    document.getElementById('hour').innerHTML = 'ጥር';
+}
+if (month == '6') {
+    document.getElementById('hour').innerHTML = 'የካቲት';
+}
+if (month == '7') {
+    document.getElementById('hour').innerHTML = 'መጋቢት';
+}
+if (month == '8') {
+    document.getElementById('hour').innerHTML = 'ሚያዝያ';
+}
+if (month == '9') {
+    document.getElementById('hour').innerHTML = 'ግንቦት';
+}
+if (month == '10') {
+    document.getElementById('hour').innerHTML = 'ሰኔ';
+}
+if (month == '11') {
+    document.getElementById('hour').innerHTML = 'ሀምሌ';
+}
+if (month == '12') {
+    document.getElementById('hour').innerHTML = 'ነሀሴ';
+}
+if (month == '13') {
+    document.getElementById('hour').innerHTML = 'ፑዋግሜ';
+}
+document.getElementById('fullyear').innerHTML = fullyear;
+</script>
+</html>
